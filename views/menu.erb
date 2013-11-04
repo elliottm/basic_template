@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Takeaway</title>
+  </head>
+  <body>
+  	<header>
+      <h1>..Menu..</h1>
+  	</header>
+    <% @dishes.each do |dish| %>
+      <article>
+        <p>The dish is called <%= dish.name %></p>
+        <p>The price is £<%= dish.price %></p>
+      </article>
+    <% end %>
+  </body>
+</html>
